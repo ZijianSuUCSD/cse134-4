@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4 part 1</title>
+    <script type="text/javascript" src="https://cdnout.com/dompurify/purify.js"></script>
+</head>
+<body>
+    <button id="my_alert" >Alert</button>
+    <button id="my_confirm" >Confirm</button>
+    <button id="my_prompt">Prompt</button>
+    <button id="my_safer_prompt">Safer Prompt</button>
+    <hr>
+    <output id="opt1" style="display: none;"></output>
+    <p id="opt2" style="display: none;"></p>
+    <p id="opt3" style="display: none;"></p>
+
+    <script>
+        /*Alert*/
+        /*one arrow function*/
+        document.getElementById("my_alert").addEventListener("click", ()=> alert("Alert pressed"))
+
+        /*Confirm*/
+        document.getElementById("my_confirm").addEventListener("click",function(){
+            let my_value =  confirm("Do you confirm this?");
+            const opt_elem = document.getElementById("opt1");
+            opt_elem.textContent = `The value returned by the confirm method is : ${my_value}`;
+            opt_elem.style.display = "initial";
+            document.getElementById("opt2").style.display = "none";
+            document.getElementById("opt3").style.display = "none";
+        })
+
+        /*Prompt*/
+        document.getElementById("my_prompt").addEventListener("click",function(){
+            let my_prompt_input = prompt("What is your name?");
+            opt2_elem = document.getElementById("opt2");
+            if(my_prompt_input != null){
+                opt2_elem.innerHTML = `Prompt rseult: ${my_prompt_input}`;
+            }
+            else{
+                opt2_elem.innerHTML = "User didn't enter anything";
+            }
+            opt2_elem.style.display = "initial";
+            document.getElementById("opt1").style.display = "none";
+            document.getElementById("opt3").style.display = "none";
+        })
+
+        /*Safer Prompt*/
+        document.getElementById("my_safer_prompt").addEventListener("click",function(){
+            let my_prompt_input2 = prompt("What is your name?");
+            opt3_elem = document.getElementById("opt3");
+            if(my_prompt_input2 != null){
+                let clean = DOMPurify.sanitize(my_prompt_input2);
+                opt3_elem.innerHTML = `Prompt rseult: ${clean}`;
+            }
+            else{
+                opt3_elem.innerText = "User didn't enter anything";
+            }
+            opt3_elem.style.display = "initial";
+            document.getElementById("opt1").style.display = "none";
+            document.getElementById("opt2").style.display = "none";
+        })
+    </script>
+
+
+   
+
+
+</body>
+
+</html>

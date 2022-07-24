@@ -1,0 +1,304 @@
+:root{
+    --top-bgc-L:rgb(217, 222, 233);
+    --top-bgc-R:rgb(122, 141, 188);
+}
+@font-face {
+    font-family: myFont;
+    src: url(font/ZCOOL-Addict-Italic-01.ttf);
+}
+@font-face {
+    font-family: myFont2;
+    src: url(font/Quantum-2.otf);
+}
+@keyframes top-color{
+    from{background-color: rgb(139, 173, 212);}
+    to{background-color: rgb(51, 51, 122);}
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#top-button{
+    position: fixed;
+    right:1%;
+    bottom: 1%;
+}
+
+#top{
+    color: rgb(255, 255, 255);
+    font-family: myFont,'Times New Roman', Times, serif;
+    text-align: center;
+}
+#top_p{text-align: center;}
+.flex-box1{
+    display: flex;
+}
+.flex-box2{
+    display: flex;
+    text-align: justify;
+}
+.t1{
+    flex:1;
+    background-color: var(--top-bgc-L);
+}
+.t2{
+    flex:1;
+}
+.t3{
+    flex:1;
+    background-color: var(--top-bgc-R);
+}
+.t4{
+    flex: 1;
+    background-color: rgb(22, 40, 65);
+}
+
+.my-font{
+    font-family: myFont,'Times New Roman', Times, serif;
+}
+
+aside.my-font, strong.my-font{
+    font-family: myFont,'Times New Roman', Times, serif;
+    color:white;
+    line-height: 3em;
+    padding-right: 2em;
+}
+aside{color: white; text-indent: 1.8em;}
+
+.blue-2{background-color: rgb(147, 148, 212);}
+.blue-1{background-color:rgb(139, 173, 212);}
+
+
+header{background-color: rgb(20, 41, 65);}
+h2{ 
+    font-family: myFont2,'Times New Roman', Times, serif;
+    background-color: rgb(59, 137, 204);
+    padding: 0.3em 0em;
+}
+#info{
+    background-color: rgb(139, 173, 212); 
+}
+#ED{
+    font-family:'Courier New', Courier, monospace;
+    background-color: rgb(170, 225, 235); 
+    text-align: center;
+    align-items: center;
+}
+#SK{
+    background-image: url(images/bg-1.jpg);
+    background-size:100% 100%;
+}
+#PJ{
+    background-color: rgb(194, 216, 238);
+}
+#me{
+    background-image: url(images/contactme.png);
+    
+}
+#Survey{
+    text-align: center;
+    background-color: rgb(217, 225, 228);
+}
+h4{
+    background-color: rgb(172, 165, 165);
+}
+.align-L{
+    text-align: left !important;
+    margin-left: 5em;
+}
+footer{background-color: rgb(213, 233, 255);text-align: center;}
+
+nav{ background-color: rgb(51, 51, 122);
+    padding: 1em;
+    animation-name: top-color;
+    animation-duration: 4s;
+}
+/**/
+
+.nav-ul{list-style-type: none;}
+.bgm-ul{list-style-type: none;text-align: center;}
+.another-ul{list-style-type: none;text-align: center;}
+
+a.nav-text {
+    color: white;
+    text-decoration: none;
+    line-height: 2em;
+}
+a.nav-text :hover{
+    color: rgb(236, 234, 118);
+    background-color: azure;
+    padding: 1em 0em 1em 0em;
+}
+progress{
+    width: 70%;
+    height: 2.5em;
+}
+/*mobile*/
+@media all and (max-width:699px){
+    nav{display: none;}
+
+    .hamburger, .close {
+        top: 5px;
+        left: 5px;
+        width: 40px;
+        height: 40px;
+        border: none;
+        position: absolute;
+        position: fixed;
+      }
+      
+      .hamburger {
+        background: rgb(186, 228, 252);
+        border: 1px solid rgb(214, 137, 137);;
+        border-radius: 30px;
+      }
+      
+      .close {
+        background: rgb(130, 142, 250);
+        border-radius: 30px;
+      }
+      
+      .hamburger img, .close img {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .nav-ul2 {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-evenly;
+        align-items: center;
+        border-radius: 0px 30px 30px 0px ;
+        background: rgb(51, 51, 122);
+        position: absolute;
+        position: fixed;
+        z-index: 100;
+        top: 0;
+        left: 0;
+        width: 70%;
+        height: 100vh;
+        overflow: hidden;
+        list-style: none;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+      }
+          
+      .nav-ul2:target {
+        transform: translateX(0);
+      }
+      
+      li a {
+        display: block;
+        font-family: myFont2,'Times New Roman', Times, serif;
+        color: white;
+        font-weight: bold;
+        font-size: 1.6em;
+        /* remove default underline and add our own with padding and border bottom */
+        text-decoration: none;
+        padding-bottom: 0.5rem;
+      }
+    
+
+}
+
+
+/*pad*/
+@media all and (min-width:700px){
+    .contact{
+        padding-left: 3em;;
+    }
+    div.mobile-nav{
+        display: none;
+    }
+    strong.my-font{
+        line-height: 0;
+    }
+
+    a.nav-text {
+        line-height: 0;
+        padding: 0.5em;
+    }
+    .nav-ul{display: flex;}
+    .table-ul{display: flex;}
+    #ED{
+        background-color: rgb(170, 225, 235); 
+        text-align: justify;
+        padding-left: 10em;
+
+    }
+    .another-ul{
+        list-style-type: none;
+        text-align: left;
+        margin-left: 5em;
+    } 
+    progress{
+        width: 50%;
+        height: 2.5em;
+    }
+}
+/*Desktop*/
+@media all and (min-width:960px){
+    a.nav-text {
+        padding: 1.1em;
+    }
+    #my-p{
+        margin-left: 20em;
+        margin-right: 5em ;
+    }
+    .pad-left{
+        margin-left: 20em;
+    }
+    .bgm-ul{display: flex;}
+    h2{ 
+        padding: 1em 0em;
+    }
+    progress{
+        width: 25%;
+        height: 2.5em;
+    }
+    #SK{
+        background-image: url(images/bg-2.png);
+        background-size:100% 100%;
+    }
+}
+
+
+.pad-left{
+    margin-left: 7em;
+}
+#my-p{
+    height: 115px;
+    width: 90px;
+    transition: width 2s, height 2s;
+    transform: rotate(10deg);
+    margin-top: 3em;
+    margin-left: 7em;
+    position: relative;
+    border-radius: 30px;
+}
+#my-p:hover{
+    height: 230px;
+    width: 180px;
+}
+
+.table-1{
+    flex: 1;
+    background-color: rgb(180, 191, 206);
+    border-radius: 30px;
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 5em;
+}
+pre{
+    margin-left: 3em;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+.bar-font{
+    margin-left: 5%;
+    margin-top: 0.7em;
+    font-family: myFont,'Times New Roman', Times, serif;
+}
+

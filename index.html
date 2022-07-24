@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="images/favicon.ico" rel="icon">
+        <title>HW3 HTML page</title>
+        <link rel="stylesheet" type="text/css" href="my.css" >
+        <!--analytics script will go here-->
+        <script> </script>
+        <!--style should be empty without CSS-->
+        <style> </style>
+    </head>
+        
+    <body>
+        <!--header for Page top and navigation bar-->
+        <header>
+            <div class="flex-box1" id="top_p">
+                <div class="t1"></div>
+                <div class="t2">                
+                    <picture>
+                        <source media="(min-width:960px)" srcset="images/Geisel_Library_1.jpg">
+                        <source media="(min-width:700px)" srcset="images/Geisel_Library_2.jpg">
+                        <img src="images/Geisel_Library_3.jpg" alt="UCSD Library" style="height:100% ;width:100%;margin: 0 auto;">
+                    </picture>
+                </div>
+                <div class="t3"></div>
+            </div>
+            <div class="blue-1">
+            <h1 id="top"><i>Welcome to <span style="color: rgb(105, 75, 216);">my</span> page!</i></h1> 
+            </div>
+            <nav>
+                <ul class="nav-ul">
+                    <li><strong class="my-font">Navigation</strong></li>
+                    <li><a class="nav-text" href="#info"><b>&nbsp; About me &nbsp;</b></a></li>
+                    <li><a class="nav-text" href="#ED-"><b>&nbsp; Education &nbsp;</b></a></li> 
+                    <li><a class="nav-text" href="#SK"><b>&nbsp; Skills &nbsp;</b></a></li>
+                    <li><a class="nav-text" href="#PJ"><b>&nbsp; Projects &nbsp;</b></a></li>
+                    <li><a class="nav-text" href="#me"><b>&nbsp; Contact me &nbsp;</b></a></li>
+                </ul>
+            </nav>
+            <div class="mobile-nav">
+                <ul class="nav-ul2" id="nav-ul2">
+                    <li><a class="nav-text" href="#info"><b>&nbsp; About me &nbsp;</b></a></li>
+                    <li><a class="nav-text" href="#ED-"><b>&nbsp; Education &nbsp;</b></a></li> 
+                    <li><a class="nav-text" href="#SK"><b>&nbsp; Skills &nbsp;</b></a></li>
+                    <li><a class="nav-text" href="#PJ"><b>&nbsp; Projects &nbsp;</b></a></li>
+                    <li><a class="nav-text" href="#me"><b>&nbsp; Contact me &nbsp;</b></a></li>
+                    <li>
+                        <a class="close" href="#">
+                            <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
+                        </a>
+                    </li>
+                </ul>
+                <a class="hamburger" href="#nav-ul2">
+                    <img src="https://ljc-dev.github.io/testing0/ham.svg" alt="menu">
+                </a>
+            </div>
+            <div class="flex-box1">
+                <ul class="bgm-ul">
+                    <li><img src="images/ucsd.gif" alt="UCSD.gif" style="height:100% ;width:100%" ></li>
+                    <li>
+                            <br>
+                            <aside class="my-font"> "what you see is what you get." </aside>
+                            <aside> Click on the triangle below to play BGM</aside>
+                            <audio controls>
+                                <source src="audio/dreams.mp3" type="audio/mpeg">
+                            </audio>
+                            <br>
+                            <br>
+                            <br>
+                    </li>
+                </ul>  
+            </div>
+        </header>
+        <!--Content assigned according to the navigation bar in main-->
+        <main>
+            <section id="info">
+                <h2><em>&nbsp;&nbsp;&nbsp;About me</em></h2>
+                <div class="flex-box1">
+                    <ul class="img-ul">
+                        <li>
+                            <figure>
+                                <img id="my-p" src="images/p.png" alt="my photo.png" >
+                                <figcaption class="pad-left">Profile picture</figcaption>
+                            </figure>
+                        </li>
+                        <li>
+                            <table class="table-1">
+                                <caption><b>Basic information</b></caption>
+                                <tr>
+                                    <th>-*-</th>
+                                    <th>-*-</th> 
+                                </tr>
+                                <tr>
+                                    <td>Name:</td> 
+                                    <td>Zijian Su</td> 
+                                </tr>
+                                <tr>
+                                    <td>Gender:</td>
+                                    <td>Male</td>
+                                </tr>
+                                <tr>
+                                    <td>Education:</td>
+                                    <td>Undergraduate</td>
+                                </tr>
+                                <tr>
+                                    <td>Major:</td>
+                                    <td>CS</td>
+                                </tr>
+                                <tr>
+                                    <td>Phone number:</td>
+                                    <td>1-234-568-8910</td>
+                                </tr>
+                                <tr>
+                                    <td>---</td>
+                                    <td>---</td>
+                                </tr>
+                            </table>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <pre>My hobby is playing   "  computer games   ", they are so interesting!</pre>
+                <br>
+            </section>
+            <p class="blue-2">&nbsp; <code>Hello World</code> is where the dream begins.</p>
+
+            <h2 id ="ED-">&nbsp;&nbsp;&nbsp;Education </h2>
+            <section id="ED">
+                <br>
+                <br>
+                <h3>School attended:(Click the triangle to see details)</h3>
+                <details>
+                    <summary class="align-L">High school</summary>
+                    <ol class="align-L">
+                        <li class="align-L">Foreign high school</li>
+                    </ol>
+                </details>
+                <details>
+                    <summary class="align-L">University/College</summary>
+                    <ol class="align-L">
+                        <li class="align-L">PCC</li>
+                        <li class="align-L">UCSD</li>
+                    </ol>
+                </details>
+                <p class="align-L">Currently studying in UCSD.</p>
+                <details>
+                    <summary class="align-L">More information about UCSD: <a href="https://ucsd.edu/">ucsd.edu</a></summary>
+                    <ol class="another-ul">
+                        <li>
+                            <video width="320" height="240" controls>
+                            <source src="video/ucsd.mp4" type="video/mp4">
+                        </video>
+                        </li>
+                    </ol>
+                </details>
+                <br>
+                <br>
+            </section>
+            <section id="SK">
+                <h2>&nbsp;&nbsp;&nbsp;Skills</h2>
+                <br>
+                <br>
+                <p class="flex-box2">
+                    <span class="bar-font"><b>C++&nbsp;&nbsp;&nbsp;</b></span>
+                    <progress  max="100" value="60">60 degrees</progress>
+                </p>
+                <p class="flex-box2">
+                    <span class="bar-font"><b>Java&nbsp;&nbsp;&nbsp;</b></span>
+                    <progress max="100" value="35">35 degrees</progress>
+                </p>
+                <p class="flex-box2">
+                    <span class="bar-font"><b>Python&nbsp;&nbsp; </b></span>
+                    <progress  max="100" value="50">50 degrees</progress>
+                </p>
+                <p class="flex-box2">
+                    <span class="bar-font"><b>Html&nbsp;&nbsp;&nbsp;</b></span>
+                    <progress max="100" value="30">30 degrees</progress>
+                </p>
+                <br>
+                <br>
+            </section>
+            <section id="PJ">
+                <h2>&nbsp;&nbsp;&nbsp;Projects</h2>
+                <br>
+                <label for="projects" class="align-L">Project list</label>
+                <select id="projects">
+                    <option>select a project</option>
+                    <optgroup label="C++">
+                        <option>c++ project 1</option>
+                        <option>c++ project 2</option>
+                    </optgroup>
+                    <optgroup label="Python">
+                        <option>Python project 1</option>
+                        <option>Python project 2</option>
+                    </optgroup>
+                </select>
+                <br>
+                <br>
+                <br>
+                <br>
+                <p class="align-L">Reserved project display position, need JS to display.</p>
+                <br>
+                <br>
+                <br>
+            </section>
+            <section id="me">
+                <h2>&nbsp;&nbsp;&nbsp;Contact me</h2>
+                <br>
+                <br>
+                
+                <table>
+                    <tr>
+                        <td class="contact"><b>Phone number:</b></td> 
+                        <td class="contact"><b>1-234-568-8910</b></td> 
+                    </tr>
+                    <tr>
+                        <td class="contact"><b>E-mail:</b></td> 
+                        <td class="contact"><b>z5su@ucsd.edu</b></td> 
+                    </tr>
+                    <tr>
+                        <td class="contact"><b>Address:</b></td> 
+                        <td class="contact"><b>9500 Gilman Dr, La Jolla, CA 92093</b></td> 
+                    </tr>
+                </table>
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>
+            <section id="Survey">
+                <h4>&nbsp;&nbsp;&nbsp;Survey</h4>
+                <div>What do you think of this page?</div>
+                <input type="radio" id="good" name="feeling" value="good">
+                <label for="good" class="my-font">good</label>
+                <input type="radio" id="ok" name="feeling" value="ok">
+                <label for="ok" class="my-font">ok</label>
+                <input type="radio" id="bad" name="feeling" value="bad">
+                <label for="bad" class="my-font">bad</label><br>
+                <label for ="comment">_____Comment</label>
+                <input list="comments" name = "comment" id="comment">
+                <datalist id="comments">
+                    <option value="very good"></option>
+                    <option value="great"></option>
+                    <option value="nice"></option>
+                </datalist>
+                <br>
+                <label for="extracomment">Extra Comment</label><br>
+                <textarea id="extracomment" name="extracomment" rows="3" cols="40">Speak freely!</textarea>
+                <br>
+
+                <!--The content displayed when the button is clicked.-->
+                <!--Since I don't have access to scripts, this feature is on hold for now.-->
+                <template>
+                    <p>Thank you!</p>
+                </template>
+
+                <!--fake submit button-->
+                <button type="button">Submit</button>
+            </section>
+        </main>
+        <hr>
+        <form action="#top_p" method="get">
+            <button id="top-button">
+                <img src="images/backtotop.png" alt="back to top" style="height: 30px;">
+            </button>
+        </form>
+
+        <footer>
+            <b>Page's README.md</b><br>
+            <iframe src="README.md" title="README" height="70" width="200"></iframe>
+            <p>&copy; Author: Zijian Su</p>
+        </footer>
+
+    </body>
+
+</html>

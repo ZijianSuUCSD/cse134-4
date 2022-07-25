@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW4 part 3</title>
+    <script type="text/javascript" src="https://cdnout.com/dompurify/purify.js"></script>
+    <style>
+        .form-pair{
+            margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="border: solid 0.5px;">
+        <tr>
+            <td>Post Title:</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>Post Date:</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Post summary :</td>
+        </tr>
+        <tr>
+            <td>:</td>
+        </tr>
+        <td style="text-align: right;"><button id="c_ok">Edit</button> <button id="c_cancel">Delete</button></td>
+    </table>
+    <hr>
+    <form id="form" name="contact-me-form" action="javascript:void(0);" method="post">
+        <fieldset>
+            <legend>Post a blog!</legend>
+            
+            <div class="form-pair">
+            <label for="PT">Post Title:</label>
+            <input type="text" id="PT" name="PT">
+            </div>
+            
+            <div class="form-pair">
+            <label for="PD">Post Date:</label>
+            <input type="date" id="PD" name="PD">
+            </div>
+            
+            <div class="form-pair">
+            <label for="PS">Post summary :</label>
+            <textarea id="PS" name="PS"></textarea>
+            </div>
+
+            <button type="submit">Post</button>
+        </fieldset>
+    </form>
+
+</body>
+</html>

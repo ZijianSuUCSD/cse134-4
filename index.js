@@ -1,4 +1,4 @@
-import * as dia_fun from "/js/customdialog.js";
+import * as dia_fun from "/customdialog.js";
 document.getElementById("my_alert").addEventListener("click", dia_fun.show_alert);
 document.getElementById("a_button").addEventListener("click", dia_fun.close_alert);
 

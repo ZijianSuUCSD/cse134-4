@@ -37,7 +37,7 @@
         document.getElementById("my_prompt").addEventListener("click",function(){
             let my_prompt_input = prompt("What is your name?");
             let opt2_elem = document.getElementById("opt2");
-            if(my_prompt_input != null){
+            if(my_prompt_input != null && my_prompt_input != ""){
                 opt2_elem.innerHTML = `Prompt result: ${my_prompt_input}`;
             }
             else{
@@ -52,7 +52,7 @@
         document.getElementById("my_safer_prompt").addEventListener("click",function(){
             let my_prompt_input2 = prompt("What is your name?");
             let opt3_elem = document.getElementById("opt3");
-            if(my_prompt_input2 != null){
+            if(my_prompt_input2 != null && my_prompt_input2 != ""){
                 let clean = DOMPurify.sanitize(my_prompt_input2);
                 opt3_elem.innerHTML = `Prompt result: ${clean}`;
             }

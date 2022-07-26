@@ -39,6 +39,7 @@
     display: flex;
     text-align: justify;
 }
+
 .t1{
     flex:1;
     background-color: var(--top-bgc-L);
@@ -136,6 +137,10 @@ progress{
     height: 2.5em;
 }
 
+#text{
+    margin-left: 23%;
+    background: #c2e2f1;
+}
 
 
 /*mobile*/
@@ -203,7 +208,7 @@ progress{
         color: white;
         font-weight: bold;
         font-size: 1.6em;
-        /* remove default underline and add our own with padding and border bottom */
+
         text-decoration: none;
         padding-bottom: 0.5rem;
       }
@@ -269,6 +274,10 @@ progress{
     #SK{
         background-image: url(images/bg-2.png);
         background-size:100% 100%;
+    }
+    .flex-box3{
+        list-style-type:none;
+        display: flex;
     }
 }
 

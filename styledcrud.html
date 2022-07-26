@@ -5,20 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HW4 part 3</title>
-    <script type="module" src="/blog.js"></script>
+    <title>HW4 part 4</title>
+    <script type="module" src="/styledposts.js"></script>
 </head>
 
 <body>
 
     <h1>Zijian's Blog</h1>
-    <ul id="list"></ul>
+    <hr>
+    <fieldset>
+        <legend><h3>Blog list</h3></legend>
+        <ul id="list"></ul>
+    </fieldset>
+    
         
     <br>
-    <button id="add">Add Post</button>
-
+    <button id="add" >
+        <img src="images/add.png" alt="Add Post"  title="Add Post" >
+    </button>
+    
     <dialog id="add_dia">
-        <table style="text-align: center;">
+        <table style="text-align: center; " >
             <tr>
                 <td><label for="PT">Post Title</label></td>
             </tr>
@@ -31,7 +38,8 @@
             <tr>
                 <td><textarea id="PS" name="PS" rows="3"></textarea></td>
             </tr>
-            <td><button id="p_ok">OK</button> <button id="p_cancel">Cancel</button></td>
+            <td><button id="p_ok" style="outline: none;"><img src="images/ok.png" alt="OK" style="height: 30px;"></button>
+                 <button id="p_cancel"><img src="images/cancel.png" alt="Cancel" style="height: 30px;"></button></td>
         </table>
     </dialog>
 

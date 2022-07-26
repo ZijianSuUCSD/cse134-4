@@ -22,11 +22,12 @@ export function add_li(str){
     let ulist = elem("list");
     let li = document.createElement("li");
     let btn_edit = document.createElement("button");
-    btn_edit.innerHTML = "Edit";
+    btn_edit.innerHTML = "✎";
     btn_edit.className = "edit_Btn"
     let btn_dele = document.createElement("button");
-    btn_dele.innerHTML = "Delete";
-    btn_dele.className = "dele_Btn"
+    btn_dele.innerHTML = "Del";
+    btn_dele.className = "dele_Btn";
+    btn_dele.style.height = "22px";
     li.innerHTML = str ;
     li.appendChild(btn_edit);
     li.appendChild(btn_dele);
@@ -101,11 +102,11 @@ export function close_c_ok(){
         let node = edit_elem.parentNode;
         node.innerText=list_string;
         let btn_edit = document.createElement("button");
-        btn_edit.innerHTML = "Edit";
+        btn_edit.innerHTML = "✎";
         btn_edit.className = "edit_Btn"
         let btn_dele = document.createElement("button");
-        btn_dele.innerHTML = "Delete";
-        btn_dele.className = "dele_Btn"
+        btn_dele.innerHTML = "Del";
+        btn_dele.className = "dele_Btn";
         node.appendChild(btn_edit);
         node.appendChild(btn_dele);
         for_loop();

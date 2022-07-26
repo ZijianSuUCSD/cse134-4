@@ -96,7 +96,9 @@ h2{
 }
 #me{
     background-image: url(images/contactme.png);
-    
+}
+#hw4_parts{
+    background-color: rgb(58, 104, 150);
 }
 #Survey{
     text-align: center;
@@ -142,6 +144,15 @@ progress{
     background: #c2e2f1;
 }
 
+.c_ul{
+    display: table;
+    margin: 0 auto;
+}
+a.lis{
+    list-style-type: none;
+    color: white;
+    line-height: 2em;
+}
 
 /*mobile*/
 @media all and (max-width:699px){

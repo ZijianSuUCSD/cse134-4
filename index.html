@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="images/favicon.ico" rel="icon">
-        <title>HW3 HTML page</title>
+        <title>HW4 part 5</title>
         <link rel="stylesheet" type="text/css" href="my.css" >
         <!--analytics script will go here-->
         <script type="module" src="/home_page.js"></script>
@@ -47,7 +47,7 @@
                     <li><a class="nav-text" href="#PJ"><b>&nbsp; Projects &nbsp;</b></a></li>
                     <li><a class="nav-text" href="#me"><b>&nbsp; Contact me &nbsp;</b></a></li>
                     <li>
-                        <a class="close" href="#">
+                        <a class="close" href="#void">
                             <img src="https://ljc-dev.github.io/testing0/ham-close.svg" alt="close">
                         </a>
                     </li>
@@ -184,23 +184,45 @@
             <section id="PJ">
                 <h2>&nbsp;&nbsp;&nbsp;Projects</h2>
                 <br>
-                <label for="projects" class="align-L">Project list</label>
-                <select id="projects">
-                    <option>select a project</option>
-                    <optgroup label="C++">
-                        <option>c++ project 1</option>
-                        <option>c++ project 2</option>
-                    </optgroup>
-                    <optgroup label="Python">
-                        <option>Python project 1</option>
-                        <option>Python project 2</option>
-                    </optgroup>
-                </select>
+                <table>
+                    <tr>
+                        <td><label for="projects" class="align-L">Project list</label>
+                            <select id="projects">
+                                <option>select a project</option>
+                                <optgroup label="C++">
+                                    <option>c++ project 1</option>
+                                    <option>c++ project 2</option>
+                                </optgroup>
+                                <optgroup label="Python">
+                                    <option>Python project 1</option>
+                                    <option>Python project 2</option>
+                                </optgroup>
+                            </select>
+                        </td>
+                        <td><button id="go_project">✔️Confirm</button></td>
+                    </tr>
+                </table>
+                
                 <br>
                 <br>
+                <div id="c++1" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my c++ projetc 1 .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="images/c++1.png" alt="c++1.png"></p>
+                </div>
+                <div id="c++2" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my c++ projetc 2 .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="images/c++2.png" alt="c++2.png"></p>
+                </div>
+                <div id="python1" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my python projetc 1 .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="images/python1.png" alt="python1.png"></p>
+                </div>
+                <div id="python2" style="text-align: center; display: none;">
+                    <h3>Introduce:</h3><p> This is my python projetc 2 .....</p><br>
+                    <p  style="text-align: center;"><img class="img_p" src="images/python2.png" alt="python2.png"></p>
+                </div>
                 <br>
                 <br>
-                <p class="align-L">Reserved project display position, need JS to display.</p>
                 <br>
                 <br>
                 <br>
@@ -257,7 +279,7 @@
                 </template>
 
                 <!--fake submit button-->
-                <button type="button">Submit</button>
+                <button type="button" id="subm">Submit</button>
             </section>
         </main>
         <hr>

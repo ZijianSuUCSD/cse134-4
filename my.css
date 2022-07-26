@@ -135,8 +135,16 @@ progress{
     width: 70%;
     height: 2.5em;
 }
+
+
+
 /*mobile*/
 @media all and (max-width:699px){
+    .img_p{
+        width: 80%;
+        height: 80%;
+    }
+
     nav{display: none;}
 
     .hamburger, .close {

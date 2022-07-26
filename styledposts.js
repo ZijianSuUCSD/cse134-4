@@ -42,7 +42,7 @@ export function delete_li(obj){
 }
 
 function load_data() {
-    let get_data = JSON.parse(localStorage.getItem('list_data')) || {};
+    let get_data = JSON.parse(localStorage.getItem('style_list_data')) || {};
     if(get_data == "[object Object]"){
         return "";
     }
@@ -52,7 +52,7 @@ function load_data() {
 }
 
 function save_data(str) {
-    localStorage.setItem('list_data', JSON.stringify(str));
+    localStorage.setItem('style_list_data', JSON.stringify(str));
 }
 
 function for_loop(){

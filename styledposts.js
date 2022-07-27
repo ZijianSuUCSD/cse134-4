@@ -9,6 +9,10 @@
  * at the same time. So I copied the code of part3 here and modified it.
 **/
 
+// Change background color using script
+document.getElementById("body").style.background = "#c2e2f1";
+document.getElementById("fiel").style.background = "#FFFFFF";
+
 // This element can be used to store the object of the blog currently to be modified
 let edit_elem;
 

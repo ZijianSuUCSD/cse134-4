@@ -1,4 +1,4 @@
-Part 5 Site Changes and 3rd Party Script
+Part 5 Site Changes and 3rd Party Script   7/26/2022
 ===
 Site Changes
 ---
@@ -27,15 +27,22 @@ Site Changes
 >After clicking the button, the introduction and sample photo of the project will be displayed.
 >Note that I didn't write some real projects, what I show is just an example image.  
 >4.2 The second is the bottom survey area. Click the Submit button to submit. 
-The script will check if an evaluation has been made. 
+>The script will check if an evaluation has been made. 
 > If the radio button is not selected, the submission will fail. Comments are optional.
 
 5. Changed the background image and text color of the "connect me" area.  
 
 
-6. Added Twitter contact page. Note that the twitter used is just an example twitter.  
+6. Added Twitter contact window. Note that the twitter used is just an example twitter.  
 
+7. Added a button at the bottom of the web page to open an embedded web game. 
+Alos, hide the game area when the screen size is too small.
 
 3rd Party Script
 ---
 1. Using Twitter's script, the Twitter widget is displayed at the bottom of the page.
+   Tool: [publish.twitter.com](https://publish.twitter.com/).
+
+
+2. Add a web game to my page. The script code was obtained from construct.net.
+   Tool: [pixel-bear-adventure](https://www.construct.net/en/free-online-games/pixel-bear-adventure-904/play?via=mh).

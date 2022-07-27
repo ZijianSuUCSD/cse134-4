@@ -24,11 +24,24 @@
     <output id="opt3" style="display: none;"></output>
 
     <script>
-        /*Alert*/
-        /*one arrow function*/
+        /*
+         * Zijian Su 7/26/2020 
+         * hw4 part 1 Simple Dialogs javascript
+         * Note that export is not necessary in my script, 
+         * it just doesn't need to be modified because it works.
+        **/
+
+        /* Alert
+         * button event, show the alert dialog. Call the browser's alert window
+         * Used to display information.
+        **/
+        /*one arrow function   => */
         document.getElementById("my_alert").addEventListener("click", ()=> alert("Alert pressed"))
 
-        /*Confirm*/
+        /* Confirm
+         * button event, show the confirm dialog. Call the browser's confirm window
+         * Returns the user clicked the ok or cancel button.
+        **/
         document.getElementById("my_confirm").addEventListener("click",function(){
             let my_value =  confirm("Do you confirm this?");
             const opt_elem = document.getElementById("opt1");
@@ -38,7 +51,10 @@
             document.getElementById("opt3").style.display = "none";
         })
 
-        /*Prompt*/
+        /* Prompt
+         * button event, show the prompt dialog. Call the browser's prompt window
+         * Returns the text entered by the user
+        **/
         document.getElementById("my_prompt").addEventListener("click",function(){
             let my_prompt_input = prompt("What is your name?");
             let opt2_elem = document.getElementById("opt2");
@@ -53,7 +69,11 @@
             document.getElementById("opt3").style.display = "none";
         })
 
-        /*Safer Prompt*/
+        /*Safer Prompt
+         * button event, show the prompt dialog. Call the browser's prompt window
+         * DOMPurify is referenced on the previous basis to sanitize the input.
+         * Returns the text entered by the user
+        **/
         document.getElementById("my_safer_prompt").addEventListener("click",function(){
             let my_prompt_input2 = prompt("What is your name?");
             let opt3_elem = document.getElementById("opt3");

@@ -100,6 +100,14 @@ h2{
 #hw4_parts{
     background-color: rgb(58, 104, 150);
 }
+#game{
+    background: rgb(0, 0, 0);
+}
+#game_title{
+    text-align: center;
+    color: white; 
+    background: rgb(172, 165, 165)!important;
+}
 #Survey{
     text-align: center;
     background-color: rgb(217, 225, 228);
@@ -141,6 +149,7 @@ progress{
 
 #text{
     margin-left: 23%;
+    border-radius: 10%;
     background: #c2e2f1;
 }
 
@@ -153,6 +162,12 @@ a.lis{
     color: white;
     line-height: 2em;
 }
+
+.contact{
+    color: rgb(214, 30, 30);
+}
+
+
 
 /*mobile*/
 @media all and (max-width:699px){
@@ -231,7 +246,7 @@ a.lis{
 /*pad*/
 @media all and (min-width:700px){
     .contact{
-        padding-left: 3em;;
+        padding-left: 3em;
     }
     div.mobile-nav{
         display: none;
@@ -289,6 +304,11 @@ a.lis{
     .flex-box3{
         list-style-type:none;
         display: flex;
+    }
+
+    #my_frame{
+        width:600px; 
+        height:340px;
     }
 }
 

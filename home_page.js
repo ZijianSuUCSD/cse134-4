@@ -50,5 +50,25 @@ function read_projects(){
     }
 }
 
+function showgame(){
+    document.getElementById("play").style.display = "initial";
+}
+function clsoegame(){
+    document.getElementById("play").style.display = "none";
+}
+
+function s_or_c_game(){
+    if(document.getElementById("show_game").innerText == "Play Game"){
+        showgame();
+        document.getElementById("show_game").innerText = "Close Game";
+    }
+    else{
+        clsoegame();
+        document.getElementById("show_game").innerText = "Play Game";
+    }
+    
+}
+
 document.getElementById("subm").addEventListener("click",submit_survey);
 document.getElementById("go_project").addEventListener("click",read_projects);
+document.getElementById("show_game").addEventListener("click",s_or_c_game)

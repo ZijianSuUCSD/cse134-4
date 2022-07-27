@@ -44,3 +44,9 @@ Added a new document to the About me part
 Embedded external controls at the bottom, from twitter
 Changed the background image of the Contacts section.  
 See changelog.md for details.  
+  
+**Cite**  
+Photo by: Darren Bradley  
+BGM form bensound.com  
+Gif form hw1 given by prof from github.  
+

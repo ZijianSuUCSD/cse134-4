@@ -9,11 +9,12 @@
     <script type="module" src="/styledposts.js"></script>
 </head>
 
-<body>
+<body id ="body">
 
     <h1>Zijian's Blog</h1>
+    <a href="/index.html">back to home page</a>
     <hr>
-    <fieldset>
+    <fieldset id ="fiel">
         <legend><h3>Blog list</h3></legend>
         <ul id="list"></ul>
     </fieldset>
@@ -23,9 +24,7 @@
     <table>
         <tr>
             <td>
-                <button id="add" >
-                    <img src="images/add.png" alt="Add Post"  title="Add Post" >
-                </button>
+                <button id="add" >➕</button>
             </td>
             <td>
                  &nbsp; Post your blog here!
@@ -49,8 +48,7 @@
                 <td><textarea id="PS" name="PS" rows="3"></textarea></td>
             </tr>
             <tr>
-                <td><button id="p_ok" style="outline: none;"><img src="images/ok.png" alt="OK" style="height: 30px;"></button>
-                    <button id="p_cancel"><img src="images/cancel.png" alt="Cancel" style="height: 30px;"></button></td>
+                <td><button id="p_ok">✔️</button> <button id="p_cancel">❌</button></td>
             </tr>
 
         </table>
@@ -74,7 +72,7 @@
                 <td><textarea id="e_PS" name="e_PS" rows="3"></textarea></td>
             </tr>
             <tr>
-                <td><button id="e_p_ok">OK</button> <button id="e_p_cancel">Cancel</button></td>
+                <td><button id="e_p_ok">✔️</button> <button id="e_p_cancel">❌</button></td>
             </tr>
         </table>
     </dialog>

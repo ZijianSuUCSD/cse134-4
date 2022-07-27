@@ -2,19 +2,37 @@ export let c_value;
 export let uname;
 export let uname2;
 
+export function disable_buttons(){
+    document.getElementById("my_alert").disabled = true;
+    document.getElementById("my_confirm").disabled = true;
+    document.getElementById("my_prompt").disabled = true;
+    document.getElementById("my_safer_prompt").disabled = true;
+}
+
+export function enable_buttons(){
+    document.getElementById("my_alert").disabled = false;
+    document.getElementById("my_confirm").disabled = false;
+    document.getElementById("my_prompt").disabled = false;
+    document.getElementById("my_safer_prompt").disabled = false;
+}
+
 export function show_alert(){
+    disable_buttons();
     document.getElementById("dialog_alert").show();
 }
 
 export function close_alert(){
+    enable_buttons();
     document.getElementById("dialog_alert").close();
 }
 
 export function show_conf(){
+    disable_buttons();
     document.getElementById("dialog_confirm").show();
 }
 
 export function close_conf_true(){
+    enable_buttons();
     c_value = true;
     document.getElementById("dialog_confirm").close(); 
 
@@ -26,6 +44,7 @@ export function close_conf_true(){
 }
 
 export function close_conf_false(){
+    enable_buttons();
     c_value = false;
     document.getElementById("dialog_confirm").close(); 
 
@@ -37,10 +56,12 @@ export function close_conf_false(){
 }
 
 export function show_prompt(){
+    disable_buttons();
     document.getElementById("dialog_prompt").show();
 }
 
 export function close_prompt_ok(){
+    enable_buttons();
     document.getElementById("dialog_prompt").close();
 
     uname = document.getElementById("uid").value;
@@ -57,6 +78,7 @@ export function close_prompt_ok(){
 }
 
 export function close_prompt_cancel(){
+    enable_buttons();
     document.getElementById("dialog_prompt").close();
 
     const opt_elem = document.getElementById("opt2");
@@ -66,13 +88,13 @@ export function close_prompt_cancel(){
     document.getElementById("opt3").style.display = "none"; 
 }
 
-
-
 export function show_safer_prompt(){
+    disable_buttons();
     document.getElementById("dialog_safer_prompt").show();
 }
 
 export function close_safer_prompt_ok(){
+    enable_buttons();
     document.getElementById("dialog_safer_prompt").close();
 
     let temp = document.getElementById("uid2").value;
@@ -90,6 +112,7 @@ export function close_safer_prompt_ok(){
 }
 
 export function close_safer_prompt_cancel(){
+    enable_buttons();
     document.getElementById("dialog_safer_prompt").close();
     
     const opt_elem = document.getElementById("opt3");
